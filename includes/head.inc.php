@@ -5,7 +5,6 @@
 
 	<title>Neptune's Window Aquarium Services</title>
 	<!--<link rel="icon" href="images/favicon.png" type="image/x-icon">-->
-	<!--<link href="css/libs.css" rel="stylesheet" type="text/css">-->
 	<link href="css/core.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat%7COpen+Sans:400,600" rel="stylesheet">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
