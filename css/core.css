@@ -1,0 +1,188 @@
+/**
+---------------------------------------------------------------
+ * Table of Contents
+ * 
+ * 1.0 - Reset & General
+ * 2.0 - Header
+ * 3.0 - Main Content
+ * 4.0 - Footer
+ * 5.0 - Media Queries
+ * 		1220 pixels (max)
+ * 		1000 pixels (max)
+ * 		788 pixels (max)
+ *		570 pixels (max)
+ *		380 pixels (max)
+ *
+---------------------------------------------------------------
+**/
+/**
+---------------------------------------------------------------
+ * 1.0 - Reset & General
+---------------------------------------------------------------
+**/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  border: 0;
+  width: 100%;
+}
+
+.clear:after, .content-container:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+body {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+
+p {
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+
+.content-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+a {
+  color: #000000;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+a:hover {
+  color: #999999;
+}
+a.btn {
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background-color: #2a98ed;
+  color: #fff;
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+header,
+nav,
+main,
+section,
+article,
+aside,
+footer {
+  display: block;
+}
+
+/**
+---------------------------------------------------------------
+ * 2.0 - Header
+---------------------------------------------------------------
+**/
+/**
+---------------------------------------------------------------
+ * 3.0 - Main Content
+---------------------------------------------------------------
+**/
+/**
+---------------------------------------------------------------
+ * 4.0 - Footer
+---------------------------------------------------------------
+**/
+/**
+
+---------------------------------------------------------------
+ * 5.0 - Media Queries
+ *
+ * 1220 pixels (max)
+---------------------------------------------------------------
+**/
+@media screen and (max-width: 1220px) {
+  .content-container {
+    max-width: 980px;
+  }
+}
+/**
+---------------------------------------------------------------
+ * 1000 pixels (max)
+---------------------------------------------------------------
+**/
+@media screen and (max-width: 1000px) {
+  .content-container {
+    max-width: 768px;
+  }
+}
+/**
+---------------------------------------------------------------
+ * 788 pixels (max)
+---------------------------------------------------------------
+**/
+@media screen and (max-width: 788px) {
+  .content-container {
+    max-width: 550px;
+  }
+}
+/**
+---------------------------------------------------------------
+ * 570 pixels (max)
+---------------------------------------------------------------
+**/
+@media screen and (max-width: 570px) {
+  .content-container {
+    max-width: 360px;
+  }
+}
+/**
+---------------------------------------------------------------
+ * 380 pixels (max)
+---------------------------------------------------------------
+**/
+@media screen and (max-width: 380px) {
+  .content-container {
+    min-width: 300px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+/*# sourceMappingURL=core.css.map */

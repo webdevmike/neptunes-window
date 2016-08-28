@@ -1,0 +1,233 @@
+/**
+---------------------------------------------------------------
+ * Table of Contents
+ * 
+ * 1.0 - Reset & General
+ * 2.0 - Header
+ * 3.0 - Main Content
+ * 4.0 - Footer
+ * 5.0 - Media Queries
+ * 		1220 pixels (max)
+ * 		1000 pixels (max)
+ * 		788 pixels (max)
+ *		570 pixels (max)
+ *		380 pixels (max)
+ *
+---------------------------------------------------------------
+**/
+
+$font-one: 'Open Sans', sans-serif;
+$font-two: 'Montserrat', sans-serif;
+$color-one: #444444;
+$color-two: #030238;
+$color-three: #2a98ed;
+
+
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+}
+
+@mixin box-shadow($shadow...) {
+	box-shadow: $shadow;
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	-ms-box-shadow: $shadow;
+	-o-box-shadow: $shadow;
+}
+
+@mixin transition($property, $time) {
+	transition: $property $time;
+	-webkit-transition: $property $time;
+	-moz-transition: $property $time;
+	-ms-transition: $property $time;
+	-o-transition: $property $time;
+}
+
+@mixin background-size($size) {
+	background-size: $size;
+	-webkit-background-size: $size;
+	-moz-background-size: $size;
+	-o-background-size: $size;
+}
+
+@mixin transform($degrees) {
+	transform:rotate($degrees);
+	-webkit-transform:rotate($degrees);
+	-moz-transform:rotate($degrees);
+	-ms-transform:rotate($degrees)
+}
+
+@mixin no-user-select() {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+/**
+---------------------------------------------------------------
+ * 1.0 - Reset & General
+---------------------------------------------------------------
+**/
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+*:focus {
+	outline:0;
+}
+
+img {
+	border:none;	
+	max-width:100%;
+	height:auto;
+}
+
+iframe {
+	border:0;
+	width:100%;
+}
+
+.clear:after {
+	display:block;
+	clear:both;
+	content:"";
+}
+
+body {
+	font-size:16px;
+	font-family: $font-one;
+	color:$color-one;
+	-webkit-text-size-adjust:100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height:1;
+}
+
+p {
+	padding-bottom:20px;
+	font-size: 15px;
+}
+
+.content-container {
+	width:100%;
+	max-width:1200px;
+	margin:0 auto;
+	position:relative;
+	@extend .clear;
+}
+
+a {
+	color: #000000;
+	@include transition(all, .3s);
+
+	&:hover {
+		color: #999999;
+	}
+
+	&.btn {
+		display: inline-block;
+		font-size: 14px;
+		text-transform: uppercase;
+		text-decoration: none;
+		text-align: center;
+		background-color: $color-three;
+		color: #fff;
+		padding: 5px 20px;
+		cursor: pointer;
+		@include border-radius(5px);
+	}
+}
+
+header, 
+nav, 
+main, 
+section, 
+article, 
+aside, 
+footer {
+	display:block
+}
+
+
+/**
+---------------------------------------------------------------
+ * 2.0 - Header
+---------------------------------------------------------------
+**/
+
+@import 'header-content';
+
+/**
+---------------------------------------------------------------
+ * 3.0 - Main Content
+---------------------------------------------------------------
+**/
+
+@import 'main-content';
+
+/**
+---------------------------------------------------------------
+ * 4.0 - Footer
+---------------------------------------------------------------
+**/
+
+@import 'footer-content';
+
+/**
+
+---------------------------------------------------------------
+ * 5.0 - Media Queries
+ *
+ * 1220 pixels (max)
+---------------------------------------------------------------
+**/
+
+@import 'queries-1220px';
+
+/**
+---------------------------------------------------------------
+ * 1000 pixels (max)
+---------------------------------------------------------------
+**/
+
+@import 'queries-1000px';
+
+/**
+---------------------------------------------------------------
+ * 788 pixels (max)
+---------------------------------------------------------------
+**/
+
+@import 'queries-788px';
+
+/**
+---------------------------------------------------------------
+ * 570 pixels (max)
+---------------------------------------------------------------
+**/
+
+@import 'queries-570px';
+
+/**
+---------------------------------------------------------------
+ * 380 pixels (max)
+---------------------------------------------------------------
+**/
+
+@import 'queries-380px';
