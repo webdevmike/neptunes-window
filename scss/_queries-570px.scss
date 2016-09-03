@@ -69,6 +69,32 @@
 				}
 			}
 		}
+
+		&.services {
+
+			ul.services-list {
+
+				li {
+
+					.icon {
+						width:70px;
+						height:70px;
+
+						.fa {
+							font-size:36px;
+							margin-top:15px;
+						}
+					}
+
+					.service {
+
+						h2 {
+							font-size:20px;
+						}
+					}
+				}
+			}
+		}
 	}
 
 }

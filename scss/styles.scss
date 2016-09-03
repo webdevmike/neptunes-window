@@ -124,6 +124,7 @@ h1 {
 	font-size:34px;
 	font-weight:normal;
 	line-height:1.2;
+	text-transform:uppercase;
 }
 
 p {
@@ -140,11 +141,11 @@ p {
 }
 
 a {
-	color: #ffffff;
+	color: $color-one;
 	@include transition(all, .3s);
 
 	&:hover {
-		color: $color-one;
+		color: #01879d;
 	}
 
 	&.btn {

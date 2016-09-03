@@ -102,6 +102,53 @@
 				}
 			}
 		}
+
+		&.about {
+
+			.about-top {
+
+				.intro {
+					margin-bottom:40px;
+				}
+
+				.image {
+					text-align:center;
+				}
+
+				.intro,
+				.image {
+					float:none;
+					width:100%;
+				}
+			}
+
+			.about-bottom {
+
+				.right {
+					margin-bottom:40px;
+				}
+
+				.left,
+				.right {
+					float:none;
+					width:100%;
+					text-align:center;
+				}
+			}
+		}
+
+		&.services {
+
+			ul.services-list {
+
+				li {
+
+					.service {
+						width:610px;
+					}
+				}
+			}
+		}
 	}
 
 }

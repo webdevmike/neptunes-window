@@ -9,12 +9,12 @@
 					<i class="fa fa-bars"></i>
 				</div>
 				<ul class="main-nav">
-					<li<?php if($nav == 'home') { echo ' class="current"'; } ?>><a href="#">Home</a></li>
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Inspiration</a></li>
-					<li><a href="#">Photo Gallery</a></li>
-					<li><a href="#">Contact Us</a></li>
+					<li<?php if($nav == 'home') { echo ' class="current"'; } ?>><a href="index.php">Home</a></li>
+					<li<?php if($nav == 'about') { echo ' class="current"'; } ?>><a href="about.php">About Us</a></li>
+					<li<?php if($nav == 'services') { echo ' class="current"'; } ?>><a href="services.php">Services</a></li>
+					<li<?php if($nav == 'inspiration') { echo ' class="current"'; } ?>><a href="inspiration.php">Inspiration</a></li>
+					<li<?php if($nav == 'photo') { echo ' class="current"'; } ?>><a href="photo-gallery.php">Photo Gallery</a></li>
+					<li<?php if($nav == 'contact') { echo ' class="current"'; } ?>><a href="contact.php">Contact Us</a></li>
 				</ul>
 			</nav>
 

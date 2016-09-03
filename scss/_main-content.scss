@@ -20,6 +20,7 @@ main {
 				width:430px;
 
 				h1 {
+					text-transform:none;
 					margin-bottom:30px;
 				}
 
@@ -35,6 +36,97 @@ main {
 			.image {
 				float:left;
 				width:711px;
+			}
+		}
+	}
+
+	&.about {
+		padding:60px 0;
+
+		.about-top {
+			margin-bottom:40px;
+			@extend .clear;
+
+			.intro {
+				float:right;
+				width:430px;
+
+				h1 {
+					margin-bottom:25px;
+				}
+
+				.learn-more {
+					margin-top:20px;
+				}
+			}
+
+			.image {
+				float:left;
+				width:711px;
+			}
+		}
+
+		.about-bottom {
+			@extend .clear;
+
+			.left {
+				float:left;
+			}
+
+			.right {
+				float:right;
+			}
+		}
+	}
+
+	&.services {
+		padding:60px 0;
+
+		h1 {
+			text-align:center;
+			margin-bottom:60px;
+		}
+
+		ul.services-list {
+			list-style-type:none;
+
+			li {
+				margin-bottom:60px;
+				@extend .clear;
+
+				.icon {
+					float:left;
+					border:2px solid $color-one;
+					width:130px;
+					height:130px;
+					text-align:center;
+					@include border-radius(50%);
+
+					.fa {
+						font-size:80px;
+						line-height:1;
+						color:$color-one;
+						margin-top:20px;
+					}
+				}
+
+				.service {
+					float:right;
+					width:990px;
+					padding-top:10px;
+
+					h2 {
+						font-weight:normal;
+						font-size:24px;
+						font-family: $font-two;
+						margin-bottom:10px;
+						color:$color-one;
+					}
+
+					.description {
+						line-height:1.5;
+					}
+				}
 			}
 		}
 	}

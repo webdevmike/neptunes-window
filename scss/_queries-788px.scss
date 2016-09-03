@@ -4,4 +4,56 @@
 		max-width:550px;
 	}
 
+	main {
+
+		&.about {
+			padding:20px 0;
+
+			.about-top {
+				margin-bottom:20px;
+
+				.intro {
+					margin-bottom:20px;
+				}
+			}
+
+			.about-bottom {
+
+				.right {
+					margin-bottom:20px;
+				}
+			}
+		}
+
+		&.services {
+			padding:20px 0;
+
+			h1 {
+				margin-bottom:30px;
+			}
+
+			ul.services-list {
+
+				li {
+					margin-bottom:30px;
+
+					.icon,
+					.service {
+						float:none;
+					}
+
+					.icon {
+						margin:0 auto 10px;
+					}
+
+					.service {
+						width:100%;
+						text-align:center;
+					}
+				}
+
+			}
+		}
+	}
+
 }
