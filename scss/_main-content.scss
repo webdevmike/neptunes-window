@@ -84,7 +84,7 @@ main {
 
 		h1 {
 			text-align:center;
-			margin-bottom:60px;
+			margin-bottom:50px;
 		}
 
 		ul.services-list {
@@ -93,6 +93,10 @@ main {
 			li {
 				margin-bottom:60px;
 				@extend .clear;
+
+				&:last-child {
+					margin-bottom:0;
+				}
 
 				.icon {
 					float:left;
@@ -126,6 +130,97 @@ main {
 					.description {
 						line-height:1.5;
 					}
+				}
+			}
+		}
+	}
+
+	&.inspiration {
+		padding:60px 0;
+
+		h1 {
+			text-align:center;
+			margin-bottom:30px;
+		}
+
+		.intro {
+			margin-bottom:55px;
+		}
+
+		ul.top-inspiration {
+			list-style-type:none;
+			@extend .clear;
+
+			li {
+				width:50%;
+				float:left;
+				margin-bottom:55px;
+				@extend .clear;
+
+				&:nth-child(odd) {
+					clear:both;
+				}
+
+				.image {
+					float:left;
+					width:310px;
+				}
+
+				.description {
+					width:290px;
+					float:right;
+					padding:0 20px;
+
+					h2 {
+						font-size:24px;
+						font-family: $font-two;
+						font-weight:normal;
+						color:$color-one;
+						margin-bottom:10px;
+					}
+
+					p {
+						font-size:15px;
+						padding-bottom:0;
+					}
+				}
+			}
+		}
+
+		.bottom-inspiration {
+			@extend .clear;	
+
+			.description,
+			.image {
+				float:right;
+			}
+
+			.description {
+				width:290px;
+				padding:0 20px;
+
+				h2 {
+					font-size: 24px;
+					font-family: $font-two;
+					font-weight: normal;
+					color: $color-one;
+					margin-bottom: 10px;
+				}
+
+				p {
+					font-size:15px;
+				}
+			}
+
+			.image {
+
+				&.one {
+					width:405px;
+					margin-left:38px;
+				}
+
+				&.two {
+					width:467px;
 				}
 			}
 		}
