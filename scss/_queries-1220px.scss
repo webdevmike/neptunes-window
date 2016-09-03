@@ -4,4 +4,21 @@
 		max-width:980px;
 	}
 
+	main {
+
+		&.home {
+
+			.home-bottom {
+
+				.intro {
+					width:400px;
+				}
+
+				.image {
+					width:525px;
+				}
+			}
+		}
+	}
+
 }

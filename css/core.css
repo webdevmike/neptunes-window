@@ -246,6 +246,13 @@ footer .copyright span {
   .content-container {
     max-width: 980px;
   }
+
+  main.home .home-bottom .intro {
+    width: 400px;
+  }
+  main.home .home-bottom .image {
+    width: 525px;
+  }
 }
 /**
 ---------------------------------------------------------------
@@ -253,13 +260,84 @@ footer .copyright span {
 ---------------------------------------------------------------
 **/
 @media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 28px;
+  }
+
   .content-container {
     max-width: 768px;
   }
 
-  .header nav .mobile-menu-btn {
+  header {
+    height: 154px;
+  }
+  header .logo {
+    margin: 5px 0;
+  }
+  header nav {
+    margin: 60px 0 0;
+  }
+  header nav .mobile-menu-btn {
     display: block;
     float: right;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  header nav .mobile-menu-btn span {
+    display: block;
+    float: left;
+    line-height: 42px;
+    font-size: 26px;
+    padding-right: 15px;
+  }
+  header nav .mobile-menu-btn .fa {
+    font-size: 42px;
+    color: #049bb3;
+  }
+  header nav ul.main-nav {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 154px;
+    left: 0;
+    z-index: 2;
+    background-color: #0e0e0e;
+  }
+  header nav ul.main-nav li {
+    float: none;
+    display: block;
+    text-align: center;
+    padding-right: 0;
+    border-bottom: 1px solid #2b2b2b;
+  }
+  header nav ul.main-nav li a {
+    display: block;
+    padding: 12px 0;
+  }
+  header nav ul.main-nav.show {
+    display: block;
+  }
+
+  main.home {
+    padding-bottom: 40px;
+  }
+  main.home .main-banner {
+    margin-bottom: 40px;
+  }
+  main.home .home-bottom .intro,
+  main.home .home-bottom .image {
+    float: none;
+    width: 100%;
+  }
+  main.home .home-bottom .intro h1 {
+    margin-bottom: 20px;
+  }
+  main.home .home-bottom .intro .learn-more {
+    margin-top: 0;
+    margin-bottom: 40px;
   }
 }
 /**
@@ -278,8 +356,52 @@ footer .copyright span {
 ---------------------------------------------------------------
 **/
 @media screen and (max-width: 570px) {
+  body {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
   .content-container {
     max-width: 360px;
+  }
+
+  header {
+    height: 102px;
+  }
+  header .logo a {
+    background-image: url(../images/compressed/logo-mobile.png);
+    width: 134px;
+    height: 90px;
+  }
+  header nav {
+    margin-top: 40px;
+  }
+  header nav .mobile-menu-btn span {
+    font-size: 20px;
+    line-height: 32px;
+    padding-right: 10px;
+  }
+  header nav .mobile-menu-btn .fa {
+    font-size: 32px;
+  }
+  header nav ul.main-nav {
+    top: 102px;
+  }
+
+  main.home {
+    padding-bottom: 20px;
+  }
+  main.home .main-banner {
+    margin-bottom: 20px;
+  }
+  main.home .home-bottom .intro h1 {
+    margin-bottom: 10px;
+  }
+  main.home .home-bottom .intro .learn-more {
+    margin-bottom: 20px;
   }
 }
 /**

@@ -1,7 +1,74 @@
 @media screen and (max-width: 570px) {
 
+	body {
+		font-size:15px;
+	}
+
+	h1 {
+		font-size:22px;
+	}
+
 	.content-container {
 		max-width:360px;
+	}
+
+	header {
+		height:102px;
+
+		.logo {
+
+			a {
+				background-image:url(../images/compressed/logo-mobile.png);
+				width:134px;
+				height:90px;
+			}
+		}
+
+		nav {
+			margin-top:40px;
+
+			.mobile-menu-btn {
+
+				span {
+					font-size:20px;
+					line-height:32px;
+					padding-right:10px;
+				}
+
+				.fa {
+					font-size:32px;
+				}
+			}
+
+			ul.main-nav {
+				top:102px;
+			}
+		}
+	}
+
+	main {
+
+		&.home {
+			padding-bottom:20px;
+
+			.main-banner {
+				margin-bottom:20px;
+			}
+
+			.home-bottom {
+
+				.intro {
+
+					h1 {
+						margin-bottom:10px;
+					}
+
+					.learn-more {
+						margin-bottom:20px;
+					}
+				}
+			}
+		}
 	}
 
 }

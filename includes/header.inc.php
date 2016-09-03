@@ -9,7 +9,7 @@
 					<i class="fa fa-bars"></i>
 				</div>
 				<ul class="main-nav">
-					<li class="current"><a href="#">Home</a></li>
+					<li<?php if($nav == 'home') { echo ' class="current"'; } ?>><a href="#">Home</a></li>
 					<li><a href="#">About Us</a></li>
 					<li><a href="#">Services</a></li>
 					<li><a href="#">Inspiration</a></li>

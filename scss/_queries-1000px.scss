@@ -1,18 +1,103 @@
 @media screen and (max-width: 1000px) {
 
+	h1 {
+		font-size:28px;
+	}
+
 	.content-container {
 		max-width:768px;
 	}
 
-	.header {
+	header {
+		height:154px;
+
+		.logo {
+			margin:5px 0;
+		}
 
 		nav {
+			margin: 60px 0 0;
 
 			.mobile-menu-btn {
 				display:block;
 				float:right;
+				cursor:pointer;
+				@include no-user-select();
 
-				ul.main-nav {
+				span {
+					display:block;
+					float:left;
+					line-height:42px;
+					font-size:26px;
+					padding-right:15px;
+				}
+
+				.fa {
+					font-size:42px;
+					color:$color-one;
+				}
+			}
+
+			ul.main-nav {
+				display:none;
+				width:100%;
+				position:absolute;
+				top:154px;
+				left:0;
+				z-index:2;
+				background-color:#0e0e0e;
+
+				li {
+					float:none;
+					display:block;
+					text-align:center;
+					padding-right:0;
+					border-bottom:1px solid #2b2b2b;
+
+					a {
+						display:block;
+						padding:12px 0;
+					}
+				}
+
+				&.show {
+					display:block;
+				}
+			}
+		}
+	}
+
+	main {
+
+		&.home {
+			padding-bottom:40px;
+
+			.main-banner {
+				margin-bottom:40px;
+			}
+
+			.home-bottom {
+
+				.intro,
+				.image {
+					float:none;
+					width:100%;
+				}
+
+				.intro {
+
+					h1 {
+						margin-bottom:20px;
+					}
+
+					.learn-more {
+						margin-top:0;
+						margin-bottom:40px;
+					}
+					
+				}
+
+				.image {
 					
 				}
 			}

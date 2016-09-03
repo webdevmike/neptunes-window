@@ -1,3 +1,4 @@
+<?php $nav = 'home'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +12,7 @@
 		<div class="content-container">
 			
 			<div class="main-banner">
-				<img src="images/compressed/home-banner.jpg" alt="Aquarium">
+				<img src="images/compressed/home-banner.jpg" alt="Aquarium" class="desktop">
 			</div>
 
 			<div class="home-bottom">
