@@ -18,9 +18,7 @@
 
 $font-one: 'Open Sans', sans-serif;
 $font-two: 'Montserrat', sans-serif;
-$color-one: #444444;
-$color-two: #030238;
-$color-three: #2a98ed;
+$color-one: #049bb3;
 
 
 @mixin border-radius($radius) {
@@ -106,8 +104,9 @@ iframe {
 body {
 	font-size:16px;
 	font-family: $font-one;
-	color:$color-one;
+	color:#ffffff;
 	-webkit-text-size-adjust:100%;
+	background-color:#1a1a1a;
 }
 
 h1,
@@ -119,9 +118,17 @@ h6 {
 	line-height:1;
 }
 
+h1 {
+	color:$color-one;
+	font-family:$font-two;
+	font-size:34px;
+	font-weight:normal;
+	line-height:1.2;
+}
+
 p {
 	padding-bottom:20px;
-	font-size: 15px;
+	line-height:1.5;
 }
 
 .content-container {
@@ -133,24 +140,27 @@ p {
 }
 
 a {
-	color: #000000;
+	color: #ffffff;
 	@include transition(all, .3s);
 
 	&:hover {
-		color: #999999;
+		color: $color-one;
 	}
 
 	&.btn {
 		display: inline-block;
-		font-size: 14px;
+		font-size: 16px;
 		text-transform: uppercase;
 		text-decoration: none;
 		text-align: center;
-		background-color: $color-three;
+		background-color: $color-one;
 		color: #fff;
-		padding: 5px 20px;
+		padding: 7px 30px;
 		cursor: pointer;
-		@include border-radius(5px);
+
+		&:hover {
+			background-color:#01879d;
+		}
 	}
 }
 

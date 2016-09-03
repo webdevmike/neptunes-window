@@ -1,6 +1,8 @@
 	<footer>	
 		<div class="content-container">
-			footer
+			
+			<div class="copyright">&copy; 2016 Neptune's Window Aquarium Service. <span>All Rights Reserved.</span></div>
+
 		</div><!-- .content-container -->
 	</footer>
 

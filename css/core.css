@@ -42,7 +42,7 @@ iframe {
   width: 100%;
 }
 
-.clear:after, .content-container:after {
+.clear:after, .content-container:after, header nav ul.main-nav:after, main.home .home-bottom:after {
   display: block;
   clear: both;
   content: "";
@@ -51,8 +51,9 @@ iframe {
 body {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #ffffff;
   -webkit-text-size-adjust: 100%;
+  background-color: #1a1a1a;
 }
 
 h1,
@@ -64,9 +65,17 @@ h6 {
   line-height: 1;
 }
 
+h1 {
+  color: #049bb3;
+  font-family: "Montserrat", sans-serif;
+  font-size: 34px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
 p {
   padding-bottom: 20px;
-  font-size: 15px;
+  line-height: 1.5;
 }
 
 .content-container {
@@ -77,7 +86,7 @@ p {
 }
 
 a {
-  color: #000000;
+  color: #ffffff;
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -85,23 +94,21 @@ a {
   -o-transition: all 0.3s;
 }
 a:hover {
-  color: #999999;
+  color: #049bb3;
 }
 a.btn {
   display: inline-block;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  background-color: #2a98ed;
+  background-color: #049bb3;
   color: #fff;
-  padding: 5px 20px;
+  padding: 7px 30px;
   cursor: pointer;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+}
+a.btn:hover {
+  background-color: #01879d;
 }
 
 header,
@@ -119,16 +126,114 @@ footer {
  * 2.0 - Header
 ---------------------------------------------------------------
 **/
+header {
+  background-color: #0e0e0e;
+  border-bottom: 2px solid #049bb3;
+}
+header .logo {
+  float: left;
+  margin: 10px 0 15px;
+}
+header .logo a {
+  display: block;
+  width: 186px;
+  height: 142px;
+  background-image: url(../images/compressed/logo-desktop.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+header nav {
+  float: right;
+  margin-top: 136px;
+  margin-bottom: 16px;
+}
+header nav .mobile-menu-btn {
+  display: none;
+}
+header nav ul.main-nav {
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+header nav ul.main-nav li {
+  float: left;
+  padding-right: 30px;
+}
+header nav ul.main-nav li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+header nav ul.main-nav li a:hover {
+  color: #049bb3;
+}
+header nav ul.main-nav li.current a {
+  color: #049bb3;
+}
+header nav ul.main-nav li:last-child {
+  padding-right: 0;
+}
+
 /**
 ---------------------------------------------------------------
  * 3.0 - Main Content
 ---------------------------------------------------------------
 **/
+main {
+  background-color: #1a1a1a;
+}
+main.home {
+  padding-bottom: 60px;
+}
+main.home .main-banner {
+  margin-bottom: 60px;
+}
+main.home .main-banner img {
+  display: block;
+}
+main.home .home-bottom .intro {
+  float: right;
+  width: 430px;
+}
+main.home .home-bottom .intro h1 {
+  margin-bottom: 30px;
+}
+main.home .home-bottom .intro .learn-more {
+  margin-top: 20px;
+}
+main.home .home-bottom .intro .learn-more a.btn {
+  font-family: "Montserrat", sans-serif;
+}
+main.home .home-bottom .image {
+  float: left;
+  width: 711px;
+}
+
 /**
 ---------------------------------------------------------------
  * 4.0 - Footer
 ---------------------------------------------------------------
 **/
+footer {
+  background-color: #0e0e0e;
+  border-top: 2px solid #049bb3;
+  border-bottom: 2px solid #049bb3;
+  padding: 40px 0;
+  margin-bottom: 20px;
+}
+footer .copyright {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+footer .copyright span {
+  display: block;
+  padding-top: 10px;
+}
+
 /**
 
 ---------------------------------------------------------------
@@ -150,6 +255,11 @@ footer {
 @media screen and (max-width: 1000px) {
   .content-container {
     max-width: 768px;
+  }
+
+  .header nav .mobile-menu-btn {
+    display: block;
+    float: right;
   }
 }
 /**
