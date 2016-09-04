@@ -15,5 +15,5 @@ $(document).ready(function() {
 	$(document).on('click', 'header nav .mobile-menu-btn, header nav ul.main-nav', function(e) {
 		e.stopPropagation();
 	});
-
+	
 });

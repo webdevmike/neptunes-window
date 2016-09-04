@@ -149,6 +149,26 @@
 				}
 			}
 		}
+
+		&.inspiration {
+
+			.bottom-inspiration {
+
+				.image {
+					text-align:center;
+
+					&.one,
+					&.two {
+						float:none;
+					}
+
+					&.one {
+						padding-bottom:20px;
+					}
+				}
+
+			}
+		}
 	}
 
 }

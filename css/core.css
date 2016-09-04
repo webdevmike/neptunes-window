@@ -417,6 +417,30 @@ footer .copyright span {
   main.services ul.services-list li .service {
     width: 815px;
   }
+  main.inspiration ul.top-inspiration li .image {
+    float: none;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  main.inspiration ul.top-inspiration li .description {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  main.inspiration .bottom-inspiration .description {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+  main.inspiration .bottom-inspiration .image.one {
+    margin-left: 0;
+    width: auto;
+    float: right;
+  }
+  main.inspiration .bottom-inspiration .image.two {
+    width: auto;
+    float: left;
+  }
 }
 /**
 ---------------------------------------------------------------
@@ -526,6 +550,15 @@ footer .copyright span {
   main.services ul.services-list li .service {
     width: 610px;
   }
+  main.inspiration .bottom-inspiration .image {
+    text-align: center;
+  }
+  main.inspiration .bottom-inspiration .image.one, main.inspiration .bottom-inspiration .image.two {
+    float: none;
+  }
+  main.inspiration .bottom-inspiration .image.one {
+    padding-bottom: 20px;
+  }
 }
 /**
 ---------------------------------------------------------------
@@ -567,6 +600,23 @@ footer .copyright span {
   }
   main.services ul.services-list li .service {
     width: 100%;
+    text-align: center;
+  }
+  main.inspiration {
+    padding: 20px 0;
+  }
+  main.inspiration h1 {
+    margin-bottom: 20px;
+  }
+  main.inspiration .intro {
+    margin-bottom: 30px;
+  }
+  main.inspiration ul.top-inspiration li {
+    width: 100%;
+    float: none;
+    margin-bottom: 40px;
+  }
+  main.inspiration .bottom-inspiration .description {
     text-align: center;
   }
 }
@@ -632,6 +682,9 @@ footer .copyright span {
     margin-top: 15px;
   }
   main.services ul.services-list li .service h2 {
+    font-size: 20px;
+  }
+  main.inspiration ul.top-inspiration li .description h2 {
     font-size: 20px;
   }
 }

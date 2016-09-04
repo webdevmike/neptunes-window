@@ -54,6 +54,34 @@
 
 			}
 		}
+
+		&.inspiration {
+			padding:20px 0;
+
+			h1 {
+				margin-bottom:20px;
+			}
+
+			.intro {
+				margin-bottom:30px;
+			}
+
+			ul.top-inspiration {
+
+				li {
+					width:100%;
+					float:none;
+					margin-bottom:40px;
+				}
+			}
+
+			.bottom-inspiration {
+
+				.description {
+					text-align:center;
+				}
+			}
+		}
 	}
 
 }

@@ -65,6 +65,50 @@
 				}
 			}
 		}
+
+		&.inspiration {
+
+			ul.top-inspiration {
+
+				li {
+
+					.image {
+						float:none;
+						margin:0 auto;
+						padding-bottom:20px;
+					}
+
+					.description {
+						width:100%;
+						margin:0 auto;
+						text-align:center;
+					}
+				}
+			}
+
+			.bottom-inspiration {
+
+				.description {
+					width:100%;
+					float:none;
+					padding:0;
+				}
+
+				.image {
+
+					&.one {
+						margin-left:0;
+						width:auto;
+						float:right;
+					}
+
+					&.two {
+						width:auto;
+						float:left;
+					}
+				}
+			}
+		}
 	}
 
 }
