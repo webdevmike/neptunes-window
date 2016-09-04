@@ -36,7 +36,7 @@
 					</li>
 					<li>(920) 915-7302</li>
 					<li><a href="mailto:mail@neptuneswindow.com">mail@neptuneswindow.com</a></li>
-					<li><a href="https://www.facebook.com/neptuneswindow" target="_blank">/NeptunesWindow</a></li>
+					<li><a href="https://www.facebook.com/neptuneswindow" target="_blank">@neptuneswindow</a></li>
 				</ul>
 
 			</div><!-- .contact-left -->
