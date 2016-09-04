@@ -82,6 +82,29 @@
 				}
 			}
 		}
+
+		&.photo-gallery {
+			padding:20px 0;
+
+			h1 {
+				margin-bottom:20px;
+			}
+
+			.pagination-controls {
+				display:none;
+			}
+
+			.gallery-page {
+				display:block;
+
+				ul.photos {
+
+					li {
+						width:100%;
+					}
+				}
+			}
+		}
 	}
 
 }

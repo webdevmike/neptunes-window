@@ -169,6 +169,26 @@
 
 			}
 		}
+
+		&.photo-gallery {
+
+			.intro {
+
+				span {
+					display:inline;
+				}
+			}
+
+			.gallery-page {
+
+				ul.photos {
+
+					li {
+						width:50%;
+					}
+				}
+			}
+		}
 	}
 
 }

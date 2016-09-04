@@ -504,6 +504,9 @@ footer .copyright span {
     width: auto;
     float: left;
   }
+  main.photo-gallery .gallery-page ul.photos li {
+    width: 33.3%;
+  }
 }
 /**
 ---------------------------------------------------------------
@@ -622,6 +625,12 @@ footer .copyright span {
   main.inspiration .bottom-inspiration .image.one {
     padding-bottom: 20px;
   }
+  main.photo-gallery .intro span {
+    display: inline;
+  }
+  main.photo-gallery .gallery-page ul.photos li {
+    width: 50%;
+  }
 }
 /**
 ---------------------------------------------------------------
@@ -681,6 +690,21 @@ footer .copyright span {
   }
   main.inspiration .bottom-inspiration .description {
     text-align: center;
+  }
+  main.photo-gallery {
+    padding: 20px 0;
+  }
+  main.photo-gallery h1 {
+    margin-bottom: 20px;
+  }
+  main.photo-gallery .pagination-controls {
+    display: none;
+  }
+  main.photo-gallery .gallery-page {
+    display: block;
+  }
+  main.photo-gallery .gallery-page ul.photos li {
+    width: 100%;
   }
 }
 /**
@@ -749,6 +773,9 @@ footer .copyright span {
   }
   main.inspiration ul.top-inspiration li .description h2 {
     font-size: 20px;
+  }
+  main.photo-gallery .gallery-page ul.photos li img {
+    cursor: default;
   }
 }
 /**

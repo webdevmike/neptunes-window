@@ -109,6 +109,19 @@
 				}
 			}
 		}
+
+		&.photo-gallery {
+
+			.gallery-page {
+
+				ul.photos {
+
+					li {
+						width:33.3%;
+					}
+				}
+			}
+		}
 	}
 
 }

@@ -46,5 +46,12 @@ $(document).ready(function() {
 		$('main.photo-gallery .gallery-page.current').removeClass('current').prev('.gallery-page').addClass('current');
 		adjustInactiveButtons();
 	});
+
+	// Bypass fancybox on mobile
+	$('.fancybox').click(function() {
+		if($(window).width() < 570) {
+			return false;
+		}
+	});
 	
 });

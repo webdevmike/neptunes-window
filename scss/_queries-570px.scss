@@ -111,6 +111,22 @@
 				}
 			}
 		}
+
+		&.photo-gallery {
+
+			.gallery-page {
+
+				ul.photos {
+
+					li {
+						
+						img {
+							cursor:default;
+						}
+					}
+				}
+			}
+		}
 	}
 
 }
