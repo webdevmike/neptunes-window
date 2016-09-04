@@ -42,7 +42,7 @@ iframe {
   width: 100%;
 }
 
-.clear:after, .content-container:after, header nav ul.main-nav:after, main.home .home-bottom:after, main.about .about-top:after, main.about .about-bottom:after, main.services ul.services-list li:after, main.inspiration ul.top-inspiration:after, main.inspiration ul.top-inspiration li:after, main.inspiration .bottom-inspiration:after {
+.clear:after, .content-container:after, header nav ul.main-nav:after, main.home .home-bottom:after, main.about .about-top:after, main.about .about-bottom:after, main.services ul.services-list li:after, main.inspiration ul.top-inspiration:after, main.inspiration ul.top-inspiration li:after, main.inspiration .bottom-inspiration:after, main.photo-gallery .gallery-page ul.photos:after {
   display: block;
   clear: both;
   content: "";
@@ -351,6 +351,69 @@ main.inspiration .bottom-inspiration .image.one {
 }
 main.inspiration .bottom-inspiration .image.two {
   width: 467px;
+}
+main.photo-gallery {
+  padding: 60px 0;
+}
+main.photo-gallery h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+main.photo-gallery .intro {
+  margin-bottom: 25px;
+  text-align: center;
+}
+main.photo-gallery .intro span {
+  display: block;
+}
+main.photo-gallery .pagination-controls {
+  text-align: center;
+  margin-bottom: 25px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+main.photo-gallery .pagination-controls .prev,
+main.photo-gallery .pagination-controls .next {
+  display: inline-block;
+  font-size: 54px;
+  line-height: 1;
+  color: #049bb3;
+  padding: 0 5px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+main.photo-gallery .pagination-controls .prev.inactive,
+main.photo-gallery .pagination-controls .next.inactive {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+main.photo-gallery .gallery-page {
+  display: none;
+}
+main.photo-gallery .gallery-page.current {
+  display: block;
+}
+main.photo-gallery .gallery-page ul.photos {
+  list-style-type: none;
+}
+main.photo-gallery .gallery-page ul.photos li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+main.photo-gallery .gallery-page ul.photos li img {
+  border: 1px solid #8d8d8d;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+main.photo-gallery .gallery-page ul.photos li img:hover {
+  border-color: #049bb3;
 }
 
 /**

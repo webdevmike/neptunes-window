@@ -225,4 +225,73 @@ main {
 			}
 		}
 	}
+
+	&.photo-gallery {
+		padding:60px 0;
+
+		h1 {
+			text-align:center;
+			margin-bottom:30px;
+		}
+
+		.intro {
+			margin-bottom:25px;
+			text-align:center;
+
+			span {
+				display:block;
+			}
+		}
+
+		.pagination-controls {
+			text-align:center;
+			margin-bottom:25px;
+			@include no-user-select();
+
+			.prev,
+			.next {
+				display:inline-block;
+				font-size:54px;
+				line-height:1;
+				color:$color-one;
+				padding:0 5px;
+				margin:0 10px;
+				cursor:pointer;
+
+				&.inactive {
+					opacity:0.2;
+					cursor:not-allowed;
+				}
+			}
+		}
+
+		.gallery-page {
+			display:none;
+
+			&.current {
+				display:block;
+			}
+
+			ul.photos {
+				list-style-type:none;
+				@extend .clear;
+
+				li {
+					float:left;
+					width:25%;
+					text-align:center;
+					margin-bottom:20px;
+
+					img {
+						border:1px solid #8d8d8d;
+						@include transition(all, .3s);
+
+						&:hover {
+							border-color:$color-one;
+						}
+					}
+				}
+			}
+		}
+	}
 }
