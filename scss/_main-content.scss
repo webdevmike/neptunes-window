@@ -294,4 +294,175 @@ main {
 			}
 		}
 	}
+
+	&.contact {
+		padding:60px 0 80px;
+
+		h1 {
+			text-align:center;
+			margin-bottom:60px;
+		}
+
+		.contact-right {
+			float:right;
+			width:60%;
+
+			.contact-form {
+
+				input.frm-input, 
+				textarea {
+					border:0;
+					font-family: $font-one;
+					font-size:14px;
+					color:#000000;
+					border:1px solid #ffffff;
+
+					&.validation-error {
+						border-color:#f00;
+					}
+
+					&::-webkit-input-placeholder {
+						color: #000000;
+					}
+					&:-moz-placeholder {
+						color: #000000;
+						opacity: 1;
+					}
+					&::-moz-placeholder {
+						color: #000000;
+						opacity: 1;
+					}
+					&:-ms-input-placeholder {
+						color: #000000;
+					}
+				}
+
+				input.frm-input {
+					height:40px;
+					padding:0 10px;
+				}
+
+				textarea {
+					display:block;
+					width:100%;
+					height:170px;
+					resize:none;
+					padding:10px;
+					margin-bottom:15px;
+				}
+
+				button {
+					display:block;
+					background-color:$color-one;
+					border:0;
+					width:100%;
+					font-family: $font-two;
+					font-size:20px;
+					padding:10px 0;
+					color:#ffffff;
+					text-transform:uppercase;
+					cursor:pointer;
+					@include transition(all, .3s);
+
+					&:hover {
+						opacity:0.9;
+					}
+				}
+			}
+
+			.top-inputs {
+				margin-bottom:15px;
+				@extend .clear;
+
+				input.frm-input {
+					width:48%;
+
+					&:first-child {
+						float:left;
+					}
+
+					&:last-child {
+						float:right;
+					}
+				}
+			}
+		}
+
+		.contact-left {
+			float:left;
+
+			a {
+				color:#ffffff;
+
+				&:hover {
+					color:$color-one;
+				}
+			}
+
+			ul.contact-info {
+				list-style-type:none;
+				font-size:17px;
+
+				li {
+					padding:0 0 30px 60px;
+					position:relative;
+
+					span {
+						display:block;
+						line-height:1.5;
+					}
+
+					&:before {
+						display:block;
+						position:absolute;
+						top:0;
+						left:0;
+						line-height:1em;
+						color:$color-one;
+						font-family: FontAwesome;
+					}
+
+					&:first-child {
+						line-height:55px;
+
+						&:before {
+							content:'\f041';
+							font-size: 55px;
+						}
+					}
+
+					&:last-child {
+						padding-bottom:0;
+					}
+
+					&:nth-child(2) {
+						line-height:46px;
+
+						&:before {
+							content:'\f095';
+							font-size: 46px;
+						}
+					}
+
+					&:nth-child(3) {
+						line-height:37px;
+
+						&:before {
+							content:'\f0e0';
+							font-size: 37px;
+						}
+					}
+
+					&:nth-child(4) {
+						line-height:40px;
+
+						&:before {
+							content:'\f082';
+							font-size:40px;
+						}
+					}
+				}
+			}
+		}
+	}
 }

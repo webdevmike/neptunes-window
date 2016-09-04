@@ -105,6 +105,26 @@
 				}
 			}
 		}
+
+		&.contact {
+
+			padding:20px 0;
+
+			h1 {
+				margin-bottom:20px;
+			}
+
+			.contact-left,
+			.contact-right {
+				width:100%;
+				float:none;
+			}
+
+			.contact-right {
+				margin-bottom:30px;
+			}
+
+		}
 	}
 
 }

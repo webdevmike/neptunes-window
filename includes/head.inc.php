@@ -4,7 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"  />
 
 	<title>Neptune's Window Aquarium Services</title>
-	<!--<link rel="icon" href="images/favicon.png" type="image/x-icon">-->
+	<link rel="icon" href="images/compressed/favicon.png" type="image/x-icon">
 	<link href="css/core.css" rel="stylesheet" type="text/css">
 	<link href="css/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat%7COpen+Sans:400,600" rel="stylesheet">

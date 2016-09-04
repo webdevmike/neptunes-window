@@ -53,5 +53,62 @@ $(document).ready(function() {
 			return false;
 		}
 	});
+
+	// Contact Form
+	$('main.contact .contact-right .contact-form button').click(function() {
+
+		var formFieldContainer = 'main.contact .contact-right .contact-form';
+
+		var validationError;
+		
+		// Loop through user input to validate
+		$(formFieldContainer + ' input.frm-input, ' + formFieldContainer + ' textarea').each(function() {
+
+			// If input does not have user input
+			if($(this).val().length < 1) {
+
+				validationError = true;
+				$(this).addClass('validation-error');
+
+			} else {
+
+				$(this).removeClass('validation-error');
+
+			}
+
+		});
+
+		// If there is a validation error
+		if(validationError == true) {
+
+			alert('Please fill out all form fields.');
+
+		} else {
+
+			var name = $(formFieldContainer + ' input[name="name"]').val();
+			var email = $(formFieldContainer + ' input[name="email"]').val();
+			var message = $(formFieldContainer + ' textarea[name="message"]').val();
+
+			var dataToSend = '&name=' + name + '&email=' + email + '&message=' + message;
+
+
+			$.ajax({
+				type: 'POST',
+				url: 'includes/contactFormProcess.php',
+				data: dataToSend,
+				success: function() {
+
+					alert('Your email has been sent! Thank you.');
+
+					// Clear all inputs
+					$(formFieldContainer + ' input.frm-input, ' + formFieldContainer + ' textarea').val('');
+				}
+			});
+
+		}
+
+		return false;
+
+	});
 	
 });

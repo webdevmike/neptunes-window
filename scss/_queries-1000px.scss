@@ -189,6 +189,33 @@
 				}
 			}
 		}
+
+		&.contact {
+
+			.contact-right {
+				width:50%;
+
+				.top-inputs {
+
+					input.frm-input {
+						width:100%;
+
+						&:first-child,
+						&:last-child {
+							float:none;
+						}
+
+						&:first-child {
+							margin-bottom:15px;
+						}
+					}
+				}
+			}
+
+			.contact-left {
+				width:50%;
+			}
+		}
 	}
 
 }
