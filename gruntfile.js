@@ -29,16 +29,6 @@ module.exports = function(grunt) {
                 dest: 'scripts/core.min.js'
             }*/
         },
-        imagemin: {
-            dynamic: {
-                files: [{
-                    expand: true,
-                    cwd: 'images/uncompressed',
-                    src: ['**/*.{png,jpg,gif}'],
-                    dest: 'images/compressed'
-                }]
-            }
-        },
         sass: {
             dist: {
                 options: {
@@ -73,11 +63,10 @@ module.exports = function(grunt) {
     // Where we tell Grunt we plan to use this plug-in.
     grunt.loadNpmTasks('grunt-contrib-concat');
     //grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat', /*'uglify', */'imagemin', 'sass', 'watch']);
+    grunt.registerTask('default', ['concat', /*'uglify', */'sass', 'watch']);
 
 };

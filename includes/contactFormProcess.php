@@ -8,9 +8,9 @@ if(isset($_POST['name'])) {
 		$message = strip_tags($_POST['message']);
 		
 		// create the email
-		$to = "mikebostone@gmail.com";
-		$headers = "From: mikebostone@gmail.com"."\r\n";
-		$subject = "Neptune's Window Website Contact Form";
+		$to = "mail@neptuneswindow.com";
+		$headers = "From: mail@neptuneswindow.com"."\r\n";
+		$subject = "Neptune's Window Contact Form";
 		$body = "Message from contact form: \n
 Name: $name \n
 Email Address: $email \n
